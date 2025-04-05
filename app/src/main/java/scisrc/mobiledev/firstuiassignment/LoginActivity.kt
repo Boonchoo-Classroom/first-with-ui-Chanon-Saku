@@ -1,7 +1,8 @@
 package scisrc.mobiledev.firstuiassignment
 
 import android.os.Bundle
-import android.widget.Button
+import android.text.Html
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -9,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class LoginActivity : AppCompatActivity() {
 
-    lateinit var backToMainBtn: Button
+    lateinit var signUpTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,11 +21,10 @@ class LoginActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        signUpTextView = findViewById(R.id.textView_sign)
 
-        backToMainBtn = findViewById(R.id.loginBackToMainBtn)
+        val htmlText = "Don't have an account? <b>Sign Up</b>"
 
-        backToMainBtn.setOnClickListener() {
-            finish()
-        }
+        signUpTextView.text = Html.fromHtml(htmlText, Html.FROM_HTML_MODE_LEGACY)
     }
 }

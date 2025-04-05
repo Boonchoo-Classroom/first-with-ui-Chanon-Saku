@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@android:color/darker_gray" />
+            <size android:height="1dp" />
+        </shape>
+    </item>
+    <item android:right="10dp" android:left="10dp" android:rightGravity="center">
+        <text
+            android:text="OR"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </item>
+</layer-list>
