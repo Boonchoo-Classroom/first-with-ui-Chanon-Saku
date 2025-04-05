@@ -15,7 +15,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="120dp"
         android:background="@color/buttonBackground"
-        android:text="Logo"
+        android:text="@string/logo"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/button_email"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,10 +31,11 @@
         android:background="@drawable/rounded_button"
         android:gravity="start|center_vertical"
         android:text="Email address"
-        android:textColor="@color/black"
+        android:textColor="#C5E1A5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_logo" />
+        app:layout_constraintTop_toBottomOf="@id/button_logo"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/button_password"
@@ -43,8 +44,8 @@
         android:layout_marginTop="28dp"
         android:background="@drawable/rounded_button"
         android:gravity="start|center_vertical"
-        android:text="Password"
-        android:textColor="@color/black"
+        android:text="@string/password"
+        android:textColor="#C5E1A5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_email" />
@@ -54,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Forgot Password?"
+        android:text="@string/forgot_password"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.778"
@@ -68,7 +69,7 @@
         android:layout_marginTop="448dp"
         android:background="@drawable/divider_with_or"
         android:padding="8dp"
-        android:text="OR"
+        android:text="@string/or"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="18sp"
@@ -85,10 +86,11 @@
         android:background="@drawable/rounded_button"
         android:gravity="center"
         android:text="Google"
-        android:textColor="@color/black"
+        android:textColor="#C5E1A5"
         app:layout_constraintEnd_toStartOf="@id/button_facebook"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_or" />
+        app:layout_constraintTop_toBottomOf="@id/textView_or"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/button_facebook"
@@ -98,10 +100,11 @@
         android:background="@drawable/rounded_button"
         android:gravity="center"
         android:text="Facebook"
-        android:textColor="@color/black"
+        android:textColor="#C5E1A5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_google"
-        app:layout_constraintTop_toBottomOf="@id/textView_or" />
+        app:layout_constraintTop_toBottomOf="@id/textView_or"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView_sign"
@@ -109,7 +112,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:gravity="center"
-        android:text="Don't have an account? <b>Sign Up</b>"
+        android:text="@string/don_t_have_an_account_b_sign_up_b"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
